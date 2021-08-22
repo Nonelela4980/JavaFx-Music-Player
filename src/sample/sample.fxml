@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="768.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="title" alignment="CENTER" layoutX="50.0" layoutY="14.0" prefHeight="38.0" prefWidth="654.0" text="Play Buddy Music ">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4745098054409027" green="0.2705882489681244" blue="0.6431372761726379" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.007843137718737125" green="0.8509804010391235" blue="0.7137255072593689" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fx:id="SongCoverView" fitHeight="273.0" fitWidth="513.0" layoutX="50.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="100.0">
+
+      </ImageView>
+      <ProgressBar fx:id="songProgress" layoutX="51.0" layoutY="435.0" prefHeight="18.0" prefWidth="619.0" progress="0.0" />
+      <Button fx:id="playBtn" layoutX="186.0" layoutY="470.0" mnemonicParsing="false" onAction="#play" prefHeight="38.0" prefWidth="88.0" textFill="#41189a">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="playIcon" fitHeight="29.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </Button>
+      <Button fx:id="nextBtn" layoutX="317.0" layoutY="470.0" mnemonicParsing="false" onAction="#next" prefHeight="38.0" prefWidth="88.0">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="nextIcon" fitHeight="29.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic></Button>
+      <Button fx:id="previous" layoutX="51.0" layoutY="469.0" mnemonicParsing="false" onAction="#previous" prefHeight="38.0" prefWidth="88.0">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="previousIcon" fitHeight="29.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </Button>
+      <ComboBox fx:id="speedSelector" layoutX="582.0" layoutY="470.0" onAction="#changeSpeed" prefHeight="38.0" prefWidth="88.0" promptText="Speed" />
+      <Label fx:id="songTitle" layoutX="51.0" layoutY="396.0" text="Song Title" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Slider fx:id="volumeSlider" layoutX="690.0" layoutY="226.0" max="100" orientation="VERTICAL" value="50" />
+      <Button fx:id="shuffleBtn" layoutX="436.0" layoutY="470.0" mnemonicParsing="false" onAction="#shuffleSong" prefHeight="38.0" prefWidth="88.0">
+         <graphic>
+            <ImageView fx:id="shuffle" fitHeight="29.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </Button>
+      <ImageView fx:id="volumeIcon" fitHeight="28.0" fitWidth="56.0" layoutX="682.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
