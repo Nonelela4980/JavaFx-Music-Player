@@ -1,2 +1,3 @@
-# This is a basic JavaFx Music player application
-#Music is loaded from files locally from the project
+This is a javaFx music player
+The songs are loaded from resources foulder
+I'm looking to improve it to read music files from local storage
